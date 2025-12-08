@@ -1,0 +1,20 @@
+[project]
+authors = ["Pavel Kos <pavel.kos@unibas.ch>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "advent_of_code_2025"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+ipykernel = ">=7.1.0,<8"
+pip = ">=25.3,<26"
+jupyter = ">=1.1.1,<2"
+
+[feature.8dec.dependencies]
+numpy = "*"
+
+[environments]
+puzzle8 = {features=["8dec"], no-default-feature = false}
